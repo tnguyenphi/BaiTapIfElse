@@ -136,16 +136,17 @@ function tamGiac(){
         document.getElementById("txtTamGiac").innerHTML = "Tam Giác Cân"
     }else if(canh1==canh3 && canh1 != canh2){
         document.getElementById("txtTamGiac").innerHTML = "Tam Giác Cân"
-    } else if(x=y+z){
+    } else if(x==(y+z)){
         document.getElementById("txtTamGiac").innerHTML = "Tam Giác Vuông"
-    } else if(y=x+z){
+    } else if(y==(x+z)){
         document.getElementById("txtTamGiac").innerHTML = "Tam Giác Vuông"
-    } else if(z=x+y){
+    } else if(z==(x+y)){
         document.getElementById("txtTamGiac").innerHTML = "Tam Giác Vuông"
-        console.log("tam giác khác")
-    }else
-        console.log("tam giác khác")
-        document.getElementById("txtTamGiac").innerHTML = "Tam Giác Loại Khác"  
+       
+    }else{
+        document.getElementById("txtTamGiac").innerHTML = "Tam Giác Loại Khác" 
+    }
+         
 }
 
 
